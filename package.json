@@ -14,6 +14,6 @@
     "build": "react-scripts build && mv build/static/js/*.js views/deals.ejs",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "start-server": "node --experimental-modules index.mjs"
+    "start-server": "yarn build && node --experimental-modules index.mjs"
   }
 }
